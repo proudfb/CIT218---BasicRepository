@@ -1,0 +1,61 @@
+﻿@model SimpleCRUD.Models.Element
+@{
+    ViewBag.Title = "ShowDetail";
+}
+
+<h2>ShowDetail</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Atomic Number
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Symbol
+        </th>
+        <th>
+            Atomic Weight
+        </th>
+        <th>
+            AtomicRadius
+        </th>
+        <th>
+            Radioactive?
+        </th>
+        <th>
+            Element Family
+        </th>
+        <th>
+            Period
+        </th>
+    </tr>
+        <tr>
+            <td>
+                @Html.Display("atomicNumber")
+            </td>
+            <td>
+                @Html.Display("name")
+            </td>
+            <td>
+                @Html.Display("symbol")
+            </td>
+            <td>
+                @Html.Display("atomicWeight")
+            </td>
+            <td>
+                @Html.Display("atomicRadius")
+            </td>
+            <td>
+                @Html.Display("isRadioactive.ToString()")
+            </td>
+            <td>
+                @Html.Display("family")
+            </td>
+            <td>
+                @Html.Display("period")
+            </td>
+        </tr>
+</table>
